@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- i18n meta -->
+  <title data-i18n="meta.title">Renata De Lille Romero · Psicóloga Clínica y Psicoeducativa</title>
+  <meta name="description" data-i18n="meta.description"
+    content="Psicóloga clínica y psicoeducativa especializada en bienestar socioemocional, regulación emocional y comunicación consciente." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="imgs/whale.svg" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="#hero" class="nav-brand">
+      <img src="imgs/whale.svg" alt="Logo ballena" />
+      <span>Renata De Lille</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about"    data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#contact"  data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+      <span class="lang-opt active" id="opt-es">ES</span>
+      <span class="lang-opt"        id="opt-en">EN</span>
+    </button>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="section-label" data-i18n="hero.label">Psicóloga Clínica &amp; Psicoeducativa</p>
+      <h1>Renata De Lille Romero</h1>
+      <p class="tagline" data-i18n="hero.tagline">
+        Bienestar socioemocional · Comunicación consciente · Comunidad educativa
+      </p>
+      <p data-i18n="hero.intro">
+        Acompaño a niñas, niños, adolescentes, familias y comunidades educativas a
+        fortalecer su bienestar emocional desde un enfoque humano, corporal e integrativo.
+      </p>
+      <div class="cta-group">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Contáctame</a>
+        <a href="#services" class="btn btn-outline" data-i18n="hero.cta_secondary">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <img src="imgs/renata.jpeg" alt="Renata De Lille Romero" />
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label" data-i18n="about.label">Sobre mí</p>
+      <h2 data-i18n="about.title">Un acompañamiento desde la presencia y el cuidado</h2>
+      <div class="about-grid">
+        <div>
+          <p data-i18n="about.p1">
+            Soy psicóloga clínica y psicoeducativa con experiencia en instituciones escolares,
+            trabajando con infancia, adolescencia, familias y personal educativo.
+            Mi trabajo se centra en fortalecer el bienestar socioemocional, la autorregulación
+            emocional y la comunicación consciente dentro de la comunidad escolar.
+          </p>
+          <p data-i18n="about.p2">
+            Trabajo desde un enfoque humano, corporal e integrativo que integra las
+            Prácticas Narrativas Decoloniales, la Neurodanza, el Arteterapia y la Terapia
+            de juego —priorizando la presencia, el cuidado y la coherencia entre lo que se
+            enseña y lo que se vive.
+          </p>
+          <p data-i18n="about.p3">
+            Cuento con formación en Psicoterapia Corporal (Instituto Córpore / The Institute
+            of Core Energetics), Licenciatura en Psicología por la Universidad Latinoamericana
+            y especialización en Terapias Narrativas Decoloniales.
+          </p>
+        </div>
+        <div>
+          <p class="section-label" data-i18n="about.approach_label">Áreas de impacto</p>
+          <ul class="approach-list" id="approachList">
+            <li data-i18n="about.area1">Bienestar socioemocional en contextos educativos</li>
+            <li data-i18n="about.area2">Autorregulación emocional y manejo de conflictos</li>
+            <li data-i18n="about.area3">Comunicación consciente y resolución pacífica</li>
+            <li data-i18n="about.area4">Prevención de violencia y clima escolar</li>
+            <li data-i18n="about.area5">Trabajo con familias y acompañamiento parental</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ── -->
+  <section id="services">
+    <div class="section-inner">
+      <p class="section-label" data-i18n="services.label">Servicios</p>
+      <h2 data-i18n="services.title">¿Cómo puedo acompañarte?</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3 data-i18n="services.s1.title">Psicoterapia individual</h3>
+          <p data-i18n="services.s1.desc">
+            Acompañamiento psicoterapéutico personalizado para niñas, niños,
+            adolescentes y personas adultas desde un enfoque integrativo.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👨‍👩‍👧</div>
+          <h3 data-i18n="services.s2.title">Orientación familiar</h3>
+          <p data-i18n="services.s2.desc">
+            Acompañamiento parental y familiar para fortalecer vínculos,
+            mejorar la comunicación y navegar etapas de cambio.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏫</div>
+          <h3 data-i18n="services.s3.title">Psicología educativa</h3>
+          <p data-i18n="services.s3.desc">
+            Programas de bienestar socioemocional y prevención de violencia
+            dirigidos a escuelas, desde primaria hasta universidad.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3 data-i18n="services.s4.title">Talleres vivenciales</h3>
+          <p data-i18n="services.s4.desc">
+            Talleres y charlas psicoeducativas integrando Neurodanza, Arteterapia
+            y dinámicas corporales para estudiantes, docentes y familias.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🕊️</div>
+          <h3 data-i18n="services.s5.title">Resolución de conflictos</h3>
+          <p data-i18n="services.s5.desc">
+            Formación en comunicación consciente y resolución pacífica para
+            comunidades educativas y equipos de trabajo.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌱</div>
+          <h3 data-i18n="services.s6.title">Primera infancia</h3>
+          <p data-i18n="services.s6.desc">
+            Apoyo al desarrollo emocional y vincular en la primera infancia,
+            con sostén cotidiano en contextos familiares.
+          </p>
+        </div>
+      </div>
+
+      <p class="section-label" style="margin-top:3rem" data-i18n="services.modalities_label">
+        Modalidades de trabajo en escuelas
+      </p>
+      <div class="modalities-row">
+        <span class="tag" data-i18n="services.mod1">Psicoterapia individual o grupal</span>
+        <span class="tag" data-i18n="services.mod2">Charlas psicoeducativas</span>
+        <span class="tag" data-i18n="services.mod3">Talleres vivenciales</span>
+        <span class="tag" data-i18n="services.mod4">Cursos cortos</span>
+        <span class="tag" data-i18n="services.mod5">Orientación a docentes</span>
+        <span class="tag" data-i18n="services.mod6">Acompañamiento a familias</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-label" data-i18n="contact.label">Contacto</p>
+      <h2 data-i18n="contact.title">Hablemos</h2>
+      <p data-i18n="contact.desc">
+        Si buscas acompañamiento psicoterapéutico o te interesa llevar alguno de estos
+        programas a tu escuela o comunidad, puedes encontrarme en mis redes sociales.
+      </p>
+      <div class="social-links">
+        <a class="social-btn instagram"
+           href="https://www.instagram.com/sai.renata_psicoterapia"
+           target="_blank" rel="noopener noreferrer">
+          <!-- Instagram icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          Instagram
+        </a>
+
+        <a class="social-btn facebook"
+           href="https://www.facebook.com/sairenatadelilleromero"
+           target="_blank" rel="noopener noreferrer">
+          <!-- Facebook icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.027 4.388 11.024 10.125 11.927v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796v8.437C19.612 23.097 24 18.1 24 12.073z"/>
+          </svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p data-i18n="footer.copy">© 2025 Renata De Lille Romero · Psicóloga Clínica y Psicoeducativa</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
