@@ -92,7 +92,7 @@ const translations = {
     "services.mod2":            "In-person in Cuernavaca, Mexico",
     "services.mod3":            "Online via Zoom",
     "services.mod4":            "$40 USD per session",
-    "services.mod5":            "$120 USD/month · 4 sessions",
+    "services.mod5":            "$150 USD/month · 4 sessions",
     "services.mod6":            "Workshops & school programmes",
 
     "contact.label": "Contact",
