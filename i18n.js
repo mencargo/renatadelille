@@ -45,7 +45,7 @@ const translations = {
     "contact.title": "Hablemos",
     "contact.desc":  "Si estás buscando iniciar un proceso de acompañamiento psicoterapéutico, o quieres saber más sobre talleres y programas para tu escuela o comunidad, puedes encontrarme en mis redes sociales.",
 
-    "footer.copy": "© 2025 Renata De Lille Romero · Psicóloga y Psicoterapeuta",
+    "footer.copy": "© Renata De Lille Romero · Psicóloga y Psicoterapeuta",
   },
 
   en: {
@@ -93,7 +93,7 @@ const translations = {
     "contact.title": "Let's talk",
     "contact.desc":  "If you are looking to begin a psychotherapeutic process, or would like to learn more about workshops and programmes for your school or community, you can find me on social media.",
 
-    "footer.copy": "© 2025 Renata De Lille Romero · Psychologist & Psychotherapist",
+    "footer.copy": "© Renata De Lille Romero · Psychologist & Psychotherapist",
   },
 };
 
