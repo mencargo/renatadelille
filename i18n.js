@@ -78,7 +78,7 @@ const translations = {
     "services.title":           "How can I support you?",
     "services.s1.title":        "Individual psychotherapy",
     "services.s1.desc":         "A process of self-knowledge and deep exploration of the Self, guided by compassionate curiosity and the willingness to look honestly at what causes suffering — to recognise it, accept it, integrate it, and consciously redirect life towards its fullest unfolding.",
-    "services.s2.title":        "Family accompaniment",
+    "services.s2.title":        "Family therapy",
     "services.s2.desc":         "Parental and family support to strengthen bonds, improve communication, and navigate periods of change.",
     "services.s3.title":        "Educational psychology",
     "services.s3.desc":         "Socio-emotional wellbeing and violence-prevention programmes for schools, from primary level to university.",
