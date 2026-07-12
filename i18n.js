@@ -1,17 +1,34 @@
-function buildWhatsAppHref(lang) {
+function buildWhatsAppHref() {
   const base   = parseInt('521777', 10) * 1e7;
   const offset = 1111343;
   const number = String(base + offset);
-  const msg = lang === 'en'
+  const msg = currentLang === 'en'
     ? 'Hi, I found your site and would like to book a session'
     : 'Hola, encontré tu sitio y me gustaría agendar una sesión';
   return 'https://wa.me/' + number + '?text=' + encodeURIComponent(msg);
 }
 
-function initWhatsApp(lang) {
+function armWhatsApp() {
   const el = document.getElementById('wa-link');
-  if (el) el.href = buildWhatsAppHref(lang);
+  if (!el || el.dataset.armed) return;
+  el.dataset.armed = '1';
+  ['mousedown', 'touchstart'].forEach(evt =>
+    el.addEventListener(evt, () => { el.href = buildWhatsAppHref(); }, { once: true })
+  );
 }
+
+// Arm only when the contact section scrolls into view
+const _waObserver = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    armWhatsApp();
+    _waObserver.disconnect();
+  }
+}, { threshold: 0.1 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) _waObserver.observe(contactSection);
+});
 
 /* ── Translations ── */
 const translations = {
@@ -147,8 +164,6 @@ function applyLang(lang) {
   // Update toggle button appearance
   document.getElementById('opt-es').classList.toggle('active', lang === 'es');
   document.getElementById('opt-en').classList.toggle('active', lang === 'en');
-
-  initWhatsApp(lang);
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
