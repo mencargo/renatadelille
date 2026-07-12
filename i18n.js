@@ -1,3 +1,18 @@
+function buildWhatsAppHref(lang) {
+  const base   = parseInt('521777', 10) * 1e7;
+  const offset = 1111343;
+  const number = String(base + offset);
+  const msg = lang === 'en'
+    ? 'Hi, I found your site and would like to book a session'
+    : 'Hola, encontré tu sitio y me gustaría agendar una sesión';
+  return 'https://wa.me/' + number + '?text=' + encodeURIComponent(msg);
+}
+
+function initWhatsApp(lang) {
+  const el = document.getElementById('wa-link');
+  if (el) el.href = buildWhatsAppHref(lang);
+}
+
 /* ── Translations ── */
 const translations = {
   es: {
@@ -44,6 +59,7 @@ const translations = {
     "contact.label": "Contacto",
     "contact.title": "Hablemos",
     "contact.desc":  "Si estás buscando iniciar un proceso de acompañamiento psicoterapéutico, o quieres saber más sobre talleres y programas para tu escuela o comunidad, puedes encontrarme en mis redes sociales.",
+    "contact.whatsapp": "WhatsApp",
 
     "footer.copy": "© Renata De Lille Romero · Psicóloga y Psicoterapeuta",
   },
@@ -92,6 +108,7 @@ const translations = {
     "contact.label": "Contact",
     "contact.title": "Let's talk",
     "contact.desc":  "If you are looking to begin a psychotherapeutic process, or would like to learn more about workshops and programmes for your school or community, you can find me on social media.",
+    "contact.whatsapp": "WhatsApp",
 
     "footer.copy": "© Renata De Lille Romero · Psychologist & Psychotherapist",
   },
@@ -130,6 +147,8 @@ function applyLang(lang) {
   // Update toggle button appearance
   document.getElementById('opt-es').classList.toggle('active', lang === 'es');
   document.getElementById('opt-en').classList.toggle('active', lang === 'en');
+
+  initWhatsApp(lang);
 }
 
 document.getElementById('langToggle').addEventListener('click', () => {
